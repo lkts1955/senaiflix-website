@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Importa as fontes 'Montserrat' e 'Ubuntu' do Google Fonts, com várias espessuras e estilos */
+
+* {
+    margin: 0px; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove os preenchimentos padrão de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho do elemento */
+    font-size: 14px; /* Define o tamanho padrão da fonte como 14px */
+    font-family: "ubuntu"; /* Define a fonte padrão como "Ubuntu" */
+}
+
+
+
+header {
+    position: absolute; /* Posiciona o cabeçalho de forma absoluta, permitindo sobreposição */
+    width: 100%; /* Define o cabeçalho para ocupar toda a largura da tela */
+    background: rgb(0,0,0); /* Define a cor de fundo inicial como preto sólido */
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%); /* Aplica gradiente para navegadores Firefox */
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%); /* Aplica gradiente para navegadores WebKit */
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%); /* Aplica gradiente padrão para navegadores modernos */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1); /* Aplica gradiente para navegadores antigos da Microsoft */
+    padding: 10px; /* Adiciona preenchimento interno de 15px ao cabeçalho */
+    padding-left: 120px;
+    padding-right: 120px;
+    display: flex; /* Ativa o modelo de layout flexível no cabeçalho */
+    justify-content: space-between; /* Distribui os elementos do cabeçalho com espaçamento entre eles */
+}
+
+header span {
+    color: white; /* Define a cor do texto do span como branca */
+}
+
+header nav a {
+    color: white; /* Define a cor dos links como branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin-left: 10px; /* Adiciona um espaçamento à esquerda de 10px entre os links */
+}
+
+.banner {
+    background-image: url("../imgs/609eb84a96ab833b47bf0c31a8f2b4eb.jpg"); /* Define a imagem de fundo do banner */
+    background-size: cover; /* Faz com que a imagem de fundo cubra completamente o banner */
+    background-position: center; /* Centraliza a imagem de fundo no banner */
+    width: 100vw; /* Define a largura do banner como 100% da largura da tela */
+    height: 100vh; /* Define a altura do banner como 100% da altura da tela */
+    display: flex; /* Ativa o modelo de layout flexível no banner */
+    align-items: flex-end; /* Alinha os itens do banner ao final (parte inferior) */
+    padding-left: 120px; /* Adiciona um preenchimento interno de 10px à esquerda */
+    padding-right: 120px;
+    padding-bottom: 200px; /* Adiciona um preenchimento interno de 200px na parte inferior */
+}
+
+.banner h1 {
+    color: white; /* Define a cor do texto do título (h1) como branca */
+    font-size: 3em; /* Define o tamanho do texto do título como 3 vezes o padrão */
+}
+
+.banner p {
+    color: white; /* Define a cor do texto do parágrafo como branca */
+    width: 60vw; /* Define a largura do parágrafo como 60% da largura da tela */
+}
+
+.filmes-series {
+
+    width: 100vw;
+    height: auto;
+    background-color: black;
+    min-height: 200px; /* Altura minima */
+
+    padding: 10px;
+    padding-left:120px;
+    padding-right:120px;
+    
+
+}
+
+.filmes-series .inputs {
+
+    display: flex;
+    margin-bottom: 40px;
+
+}
+
+.filmes-series .inputs label {
+
+color: white;
+display: flex; /* Coloca elementos um lado do outro */
+flex-direction: column; /* transforma em colunas */
+align-items: flex-start;
+margin-right: 10px;
+
+}
+
+.filmes-series .inputs label input,
+.filmes-series .inputs label select  {
+
+    width: 250px;
+    margin-top: 10px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 7px;
+    color: white;
+    padding: 5px;
+    
+}
+
+.filmes-series h2 {
+
+    color: white;
+    margin-top: 10px;
+}
+
+.filmes-series .card-container {
+
+    
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+
+    display: flex;
+    
+
+}
+
+.filmes-series .card1 {
+    
+    width: 250px;
+    height: 365px;
+    background-image: url("../imgs/plano-crítico-homem-aranha-2002.jpg");
+    
+    background-size: cover;
+  
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+
+.filmes-series .card2 {
+    
+    width: 250px;
+    height: 365px;
+    background-image: url("../imgs/filmes_18152_maxibimialiafol.png");
+   
+    background-size: cover;
+  
+
+    margin-right: 20px;
+    margin-left: 20px;
+}
+    
+
+.filmes-series .card3 {
+    
+    width: 250px;
+    height: 365px;
+    background-image: url("../imgs/filmes_16312_coringa-2-poster.jpg");
+   
+    background-size: cover;
+    background-position: center;
+
+    margin-right: 20px;
+    margin-left: 20px;
+}
+    
+
+
+.filmes-series .card4 {
+    
+    width: 250px;
+    height: 365px;
+    background-image: url("../imgs/609eb84a96ab833b47bf0c31a8f2b4eb.jpg");
+   
+    background-size: cover;
+    background-position: center;
+
+    margin-right: 20px;
+    margin-left: 20px;
+}
+    
+
+
+
+.filmes-series .card5 {
+    
+    width: 250px;
+    height: 365px;
+    background-image: url("../imgs/filmes_15002_MV5BOWFhNDIxNDQtNGRiYi00YzEzLWFjNmItMmU5ZDFiZjc5NDk1XkEyXkFqcGdeQXVyODQyNTU0NTU@._V1_SY1000_CR0,0,794,1000_AL_.jpg");
+   
+    background-size: cover;
+    background-position: center;
+
+    margin-right: 20px;
+    margin-left: 20px;
+}
+    
+
+.filmes-series .card6 {
+    
+    width: 250px;
+    height: 365px;
+    background-image: url("../imgs/filmes_18152_maxibimialiafol.png");
+   
+    background-size: cover;
+    background-position: center;
+
+    margin-right: 10px;
+}
+
+footer {
+
+    width: 100%;
+    height: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 10px;
+    
+}
+
+footer .cons-container {
+    display: flex;
+}
+
+footer .icons-container img {
+    height: 50px;
+    margin-right: 50px;
+}
+
+
+
+/* TELA DE DETALHES - INICIO */
+
+.detalhes_filme_container {
+
+    padding-top: 100px;
+    background-color: black;
+    padding-left: 120px;
+    padding-right: 120px;
+
+
+
+    /*SESSÃO VIDEO */
+
+    .trailer {
+
+        margin-top: 80px;
+        padding-left: 120;
+        padding-right: 120px;
+
+    }
+
+ /* configuração para celular*/
+ 
+ 
+/* Media Query */
+
+
+
+}
+
+@media (max-width: 768px) {
+    /* Quando a tela tiver 768 px ou menor, estas regras CSS serão ativadas */
+
+    .banner{
+
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 35px;
+    }
+
+    .banner p {
+
+        font-size: 20px;
+        width: 100%;
+        text-align: justify;
+
+    }
+
+       
+    .filmes-series  .inputs {
+        flex-direction: column; /* transforma em colunas */
+        font-size: 20px;
+        
+    }
+
+    .filmes-series .inputs label {
+
+
+    }
+
+    .filmes-series .card-container {
+
+        flex-wrap: wrap;
+        justify-content: center;
+            }
+
+    .filmes-series .card-container .card {
+
+        width: 40%;
+        height: 230px;
+        margin-bottom: 10px;
+    }
+   
+    
+.filmes-series {
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+}
