@@ -11,7 +11,7 @@
 
 
 
-header {
+.cabecalho {
     position: absolute; /* Posiciona o cabeçalho de forma absoluta, permitindo sobreposição */
     width: 100%; /* Define o cabeçalho para ocupar toda a largura da tela */
     background: rgb(0,0,0); /* Define a cor de fundo inicial como preto sólido */
@@ -26,11 +26,11 @@ header {
     justify-content: space-between; /* Distribui os elementos do cabeçalho com espaçamento entre eles */
 }
 
-header span {
+.cabecalho span {
     color: white; /* Define a cor do texto do span como branca */
 }
 
-header nav a {
+.cabecalho {
     color: white; /* Define a cor dos links como branca */
     text-decoration: none; /* Remove o sublinhado dos links */
     margin-left: 10px; /* Adiciona um espaçamento à esquerda de 10px entre os links */
@@ -57,6 +57,7 @@ header nav a {
 .banner p {
     color: white; /* Define a cor do texto do parágrafo como branca */
     width: 60vw; /* Define a largura do parágrafo como 60% da largura da tela */
+    font-size: 20px;
 }
 
 .filmes-series {
@@ -312,6 +313,39 @@ footer .icons-container img {
     padding-left: 15px;
     padding-right: 15px;
 
+}
+
+/* Cabeçalho - Mobile */
+.cabecalho {
+
+        display: none;
+}
+
+#cabecalho-mobile {
+
+
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+
+    z-index: 2;
+
+}
+
+#cabecalho-mobile nav {
+
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding-top: 20vh;
+    padding-left: 15px;
+}
+#cabecalho-mobile nav a {
+
+    color: white;
+    font-size: 4em;
+    margin-bottom: 40px;
 }
 
 }
